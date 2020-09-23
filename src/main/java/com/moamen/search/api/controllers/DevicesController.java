@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/device")
+@RequestMapping("/mobile")
 public class DevicesController {
 
     final DevicesService devicesService;
@@ -19,7 +19,7 @@ public class DevicesController {
         this.devicesService = devicesService;
     }
 
-    @GetMapping
+    @GetMapping("/search")
     @ResponseStatus(code = HttpStatus.OK)
     public List<DeviceDto> findAll(DeviceSpecification specs) {
         return devicesService.findAll(specs);
