@@ -19,6 +19,9 @@
 
    <a href="#" target="_blank">
 <img src="https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white"/>
+</a>  
+ <a href="#" target="_blank">
+<img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
 </a>
 
 </p>
@@ -35,6 +38,17 @@ Search Api uses a number of open source projects to work properly:
 * docker-compose 🐳
 * Maven
 * Mysql DB v8
+
+## Online Demo
+
+#### Home Page 
+```sh
+$ https://vast-bastion-95186.herokuapp.com
+```
+### Sample for Search endpoint
+```sh
+$ https://vast-bastion-95186.herokuapp.com/mobile/search?priceEur=200&announceDate=1998
+```
 
 ### Installation
 
