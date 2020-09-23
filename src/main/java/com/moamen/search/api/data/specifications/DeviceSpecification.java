@@ -10,10 +10,10 @@ import org.springframework.data.jpa.domain.Specification;
 
 @And({
         @Spec(path = "id", spec = Equal.class),
-        @Spec(path = "brand", spec = Equal.class),
-        @Spec(path = "phone", spec = Equal.class),
+        @Spec(path = "brand", spec = EqualIgnoreCase.class),
+        @Spec(path = "phone", spec = EqualIgnoreCase.class),
         @Spec(path = "picture", spec = Equal.class),
-        @Spec(path = "sim", spec = Equal.class),
+        @Spec(path = "sim", spec = EqualIgnoreCase.class),
         @Spec(path = "resolution", spec = Equal.class),
         @Spec(path = "release.announceDate", params = "announceDate",spec = Like.class),
         @Spec(path = "release.priceEur", params = "priceEur",spec = Equal.class),
