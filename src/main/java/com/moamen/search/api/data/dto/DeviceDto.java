@@ -19,7 +19,7 @@ public class DeviceDto {
     public String picture;
     public String sim;
     public String resolution;
-    public HardwareDto hardwareDto;
-    public ReleaseDto releaseDto;
+    public HardwareDto hardware;
+    public ReleaseDto release;
 
 }
