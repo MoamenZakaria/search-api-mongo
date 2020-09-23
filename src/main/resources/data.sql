@@ -20,7 +20,7 @@ CREATE TABLE `device` (
                           `resolution` varchar(255) DEFAULT NULL,
                           `sim` varchar(255) DEFAULT NULL,
                           PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `device` (`id`, `brand`, `phone`, `picture`, `resolution`, `sim`) VALUES
 ('4', 'Apple', 'Apple iPad Pro 12.9 (2018)', 'https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2018.jpg', '2048 x 2732 pixels', 'Nano-SIM eSIM'),
@@ -155,7 +155,7 @@ CREATE TABLE `device_hardware` (
                                    `battery` varchar(255) DEFAULT NULL,
                                    `gps` varchar(255) DEFAULT NULL,
                                    PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `device_hardware` (`id`, `audio_jack`, `battery`, `gps`) VALUES
 ('1', 'No', 'Li-Po 9720 mAh battery (36.71 Wh)', 'Yes with A-GPS'),
@@ -291,7 +291,7 @@ CREATE TABLE `device_release` (
                                   `announce_date` varchar(255) DEFAULT NULL,
                                   `price_eur` int(11) DEFAULT NULL,
                                   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `device_release` (`id`, `announce_date`, `price_eur`) VALUES
 ('1', '2018 October', '1100'),
