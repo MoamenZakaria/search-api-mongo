@@ -10,7 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Release {
+public class ReleaseDto {
 
     public String announceDate;
     public Long priceEur;

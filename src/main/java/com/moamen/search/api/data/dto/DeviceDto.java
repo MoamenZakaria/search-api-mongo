@@ -11,7 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Device {
+public class DeviceDto {
 
     public Long id;
     public String brand;
@@ -19,7 +19,7 @@ public class Device {
     public String picture;
     public String sim;
     public String resolution;
-    public Hardware hardware;
-    public Release release;
+    public HardwareDto hardwareDto;
+    public ReleaseDto releaseDto;
 
 }

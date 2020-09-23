@@ -10,7 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Hardware {
+public class HardwareDto {
 
     public String audioJack;
     public String gps;
