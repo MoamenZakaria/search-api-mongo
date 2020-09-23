@@ -1,4 +1,4 @@
-package com.moamen.search.api.repositories;
+package com.moamen.search.api.data.repositories;
 
 import com.moamen.search.api.data.entities.Device;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
