@@ -33,7 +33,7 @@ $ cd search-api
 $ mvn spring-boot:run
 ```
 
-### using Docker
+### Using Docker 🐳🐳
 Search-Api is very easy to install and deploy in a Docker container with all dependencies  using docker compose.
 
 By default, the Docker will expose port 3000 for the api and port 3306 for mysql db, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
@@ -48,7 +48,7 @@ Verify the deployment by navigating to your server address in your preferred bro
 127.0.0.1:3000/mobile/search
 ```
 
-##Usage
+## Usage
 
 After the Application is started you can the Devices by any http client or CURL
 ```sh
