@@ -24,7 +24,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class ControllerLoggingAspect {
 
-    @Around(Defines.ASPECT_POINT_CUTS.CONTROLLERS)
+    @Around(Defines.AspectPointCuts.CONTROLLERS)
     public Object controllerAroundAdvice(ProceedingJoinPoint joinPoint) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Object obj = null;

@@ -22,7 +22,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class ServiceLoggingAspect {
 
-    @Around(Defines.ASPECT_POINT_CUTS.SERVICES)
+    @Around(Defines.AspectPointCuts.SERVICES)
     public Object serviceAroundAdvice(ProceedingJoinPoint joinPoint) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Object obj = null;
@@ -38,7 +38,7 @@ public class ServiceLoggingAspect {
         return obj;
     }
 
-    @AfterThrowing(pointcut = Defines.ASPECT_POINT_CUTS.SERVICES, throwing = "error")
+    @AfterThrowing(pointcut = Defines.AspectPointCuts.SERVICES, throwing = "error")
     public void serviceAfterThrowingAdvice(JoinPoint joinPoint, Throwable error) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         String methodName = signature.getMethod().getName();
