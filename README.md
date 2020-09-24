@@ -39,7 +39,7 @@ Search Api uses a number of open source projects to work properly:
 * Maven
 * Mysql DB v8
 
-## Online Cloud Demo (on heroku)
+## App Demo (on heroku)
 
 #### Home Page 
 ```sh
