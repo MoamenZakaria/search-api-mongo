@@ -33,7 +33,7 @@
 Search Api uses a number of open source projects to work properly:
 
 * OpenJDK 8+ - Open source Java Development Kit
-* [Spring Boot](https://spring.io) - Spring Boot is an open source Java-based framework used to create a micro Service.
+* [Spring Boot](https://spring.io) - Spring Boot is an open source Java-based framework used to create Java web apps.
 * docker 🐳
 * docker-compose 🐳
 * Maven
