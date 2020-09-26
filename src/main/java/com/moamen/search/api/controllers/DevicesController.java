@@ -18,6 +18,12 @@ public class DevicesController {
     public DevicesController(DevicesService devicesService) {
         this.devicesService = devicesService;
     }
+
+    /**
+     *
+     * @param specs
+     * @return List<DeviceDto>
+     */
     @Operation(summary = "Filter mobiles based on there props like (brand,priceEur,announceDate..etc)",parameters ={})
     @GetMapping("/search")
     @ResponseStatus(code = HttpStatus.OK)

@@ -15,10 +15,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-/**
- *
- * @author mohamed.abdelsalam
- */
+
 @Component
 @Aspect
 @Slf4j
