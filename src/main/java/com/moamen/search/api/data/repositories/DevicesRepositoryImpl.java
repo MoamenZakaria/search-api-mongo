@@ -70,9 +70,9 @@ public class DevicesRepositoryImpl implements DevicesCustomRepository {
     private List<Criteria> buildReleaseCriteria(SearchCriteria searchCriteria) {
         List<Criteria> criteria = new ArrayList<>();
         if (StringUtils.isNotBlank(searchCriteria.getAnnounceDate()))
-            criteria.add(Criteria.where("release.announceDate").is(searchCriteria.getAnnounceDate()));
-        if (StringUtils.isNotBlank(searchCriteria.getPriceEur()))
-            criteria.add(Criteria.where("release.priceEur").is(searchCriteria.getPriceEur()));
+            criteria.add(Criteria.where("release.announceDate").regex(searchCriteria.getAnnounceDate().toString()));
+        if (ObjectUtils.isNotEmpty(searchCriteria.getPriceEur()))
+            criteria.add(Criteria.where("release.priceEur").is(Integer.parseInt(searchCriteria.getPriceEur())));
         return criteria;
     }
 
