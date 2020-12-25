@@ -44,11 +44,11 @@ Search Api uses a number of open source projects to work properly:
 
 #### Home Page
 ```sh  
-$ https://search-api-ax.herokuapp.com  
+$ https://search-api-mongo.herokuapp.com  
 ```  
 ### Sample for Search endpoint
 ```sh  
-$ https://search-api-ax.herokuapp.com/mobile/search?priceEur=200&announceDate=1998  
+$ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200&announceDate=1998  
 ```  
 
 ### Installation
