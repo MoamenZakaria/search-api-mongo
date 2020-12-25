@@ -57,7 +57,7 @@ $ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200&announceDate
 
 Search Api requires [JDK](https://www.oracle.com/ae/java/technologies/javase/javase-jdk8-downloads.html) v8+ to run.
 
-Install the dependencies using maven and start the server and make sure that u have mysql db server up and runung.
+Install the dependencies using maven and start the server
 
 ```sh  
 $ cd search-api-mongo  
@@ -67,7 +67,7 @@ $ mvn spring-boot:run
 ### Using Docker 🐳🐳
 Search-Api is very easy to install and deploy in a Docker container with all dependencies  using docker compose.
 
-By default, the Docker will expose port 3000 for the api and port 3306 for mysql db, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
+By default, the Docker will expose port 3000 for the api, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
 
 ```sh  
 cd search-api-mongo
