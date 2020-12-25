@@ -23,12 +23,7 @@ public class Device {
     public String picture;
     public String sim;
     public String resolution;
-//    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-//    @JoinColumn(name = "id")
     private Hardware hardware;
-
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "id")
     private Release release;
 
 

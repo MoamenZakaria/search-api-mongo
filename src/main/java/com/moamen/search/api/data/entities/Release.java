@@ -12,8 +12,7 @@ import lombok.ToString;
 @ToString
 
 public class Release {
-//    @Id
-//    public Long id;
+
     public String announceDate;
     public Integer priceEur;
 }
