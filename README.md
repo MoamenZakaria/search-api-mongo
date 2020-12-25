@@ -48,7 +48,7 @@ $ https://search-api-mongo.herokuapp.com
 ```  
 ### Sample for Search endpoint
 ```sh  
-$ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200&announceDate=1998  
+$ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200&announceDate=1999  
 ```  
 
 ### Installation

@@ -56,7 +56,7 @@ public class DevicesRepositoryImpl implements DevicesCustomRepository {
             criteria.add(Criteria.where("picture").is(searchCriteria.getPicture()));
 
         if (StringUtils.isNotBlank(searchCriteria.getSim()))
-            criteria.add(Criteria.where("sim").is(searchCriteria.getSim()));
+            criteria.add(Criteria.where("sim").regex(searchCriteria.getSim()));
 
         if (StringUtils.isNotBlank(searchCriteria.getResolution()))
             criteria.add(Criteria.where("resolution").is(searchCriteria.getResolution()));
