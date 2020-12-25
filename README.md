@@ -46,9 +46,11 @@ Search Api uses a number of open source projects to work properly:
 ```sh  
 $ https://search-api-mongo.herokuapp.com  
 ```  
-### Sample for Search endpoint
+### Samples for Search endpoint
 ```sh  
-$ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200&announceDate=1999  
+$ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200
+$ https://search-api-mongo.herokuapp.com/mobile/search?sim=eSim
+$ https://search-api-mongo.herokuapp.com/mobile/search?priceEur=200&announceDate=1999
 ```  
 
 ### Installation
