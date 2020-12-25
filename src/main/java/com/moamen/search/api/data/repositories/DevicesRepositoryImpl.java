@@ -13,6 +13,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 @Repository
 public class DevicesRepositoryImpl implements DevicesCustomRepository {
@@ -56,7 +57,7 @@ public class DevicesRepositoryImpl implements DevicesCustomRepository {
             criteria.add(Criteria.where("picture").is(searchCriteria.getPicture()));
 
         if (StringUtils.isNotBlank(searchCriteria.getSim()))
-            criteria.add(Criteria.where("sim").regex(searchCriteria.getSim()));
+            criteria.add(Criteria.where("sim").regex(Pattern.compile(searchCriteria.getSim(),Pattern.CASE_INSENSITIVE) ));
 
         if (StringUtils.isNotBlank(searchCriteria.getResolution()))
             criteria.add(Criteria.where("resolution").is(searchCriteria.getResolution()));
@@ -70,7 +71,7 @@ public class DevicesRepositoryImpl implements DevicesCustomRepository {
     private List<Criteria> buildReleaseCriteria(SearchCriteria searchCriteria) {
         List<Criteria> criteria = new ArrayList<>();
         if (StringUtils.isNotBlank(searchCriteria.getAnnounceDate()))
-            criteria.add(Criteria.where("release.announceDate").regex(searchCriteria.getAnnounceDate().toString()));
+            criteria.add(Criteria.where("release.announceDate").regex(Pattern.compile(searchCriteria.getAnnounceDate(),Pattern.CASE_INSENSITIVE) ));
         if (ObjectUtils.isNotEmpty(searchCriteria.getPriceEur()))
             criteria.add(Criteria.where("release.priceEur").is(Integer.parseInt(searchCriteria.getPriceEur())));
         return criteria;
