@@ -1,10 +1,9 @@
 package com.moamen.search.api.data.repositories;
 
 import com.moamen.search.api.data.entities.Device;
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DevicesRepository extends PagingAndSortingRepository<Device, Long>, JpaSpecificationExecutor<Device> {
+public interface DevicesRepository extends MongoRepository<Device, String>, DevicesCustomRepository {
 }
